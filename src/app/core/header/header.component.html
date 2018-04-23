@@ -1,5 +1,5 @@
 <div class="topnav">
-    <a routerLink="/" class="navbar-brand">Admin Dashboard</a>
+    <a routerLink="/signin" class="navbar-brand">Admin Dashboard</a>
     <a routerLink="/employees" *ngIf="authService.isAuthenticated()">Employees</a>
     <a routerLink="/stats" *ngIf="authService.isAuthenticated()">Statistics</a>
     <ng-template [ngIf]="!authService.isAuthenticated()">
