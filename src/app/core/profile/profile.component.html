@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="section">
+            <div class="row">
+                <h4>Personal Information</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 right-label">Date of Birth</div>
+                <div class="col-md-6">{{ profileDetails.birth_date }}</div>
+                <div class="col-md-6 right-label">Gender</div>
+                <div class="col-md-6">{{ profileDetails.gender }}</div>
+                <div class="col-md-6 right-label">Age</div>
+                <div class="col-md-6">{{ profileDetails.age }}</div>
+                <div class="col-md-6 right-label">ID number</div>
+                <div class="col-md-6">{{ profileDetails.id_number }}</div>
+                <div class="col-md-6 right-label">Phone number</div>
+                <div class="col-md-6">{{ profileDetails.phone_number }}</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <h4>Address Information</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 right-label">Pysical address</div>
+                <div class="col-md-6">{{ profileDetails.physical_address }}</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <h4>Next of kin Information</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 right-label">Name</div>
+                <div class="col-md-6">{{ profileDetails.employee_next_of_kin[0].name }}</div>
+                <div class="col-md-6 right-label">Relationship</div>
+                <div class="col-md-6">{{ profileDetails.employee_next_of_kin[0].relationship }}</div>
+                <div class="col-md-6 right-label">Email</div>
+                <div class="col-md-6">{{ profileDetails.employee_next_of_kin[0].email }}</div>
+                <div class="col-md-6 right-label">Phone number</div>
+                <div class="col-md-6">{{ profileDetails.employee_next_of_kin[0].phone_number }}</div>
+                <div class="col-md-6 right-label">Physical address</div>
+                <div class="col-md-6">{{ profileDetails.employee_next_of_kin[0].physical_address }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="section">
+            <div class="row">
+                <h4>Employment Details</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 right-label">Position</div>
+                <div class="col-md-6">{{ profileDetails.position.name }}</div>
+                <div class="col-md-6 right-label">Level</div>
+                <div class="col-md-6">{{ profileDetails.position.level }}</div>
+                <div class="col-md-6 right-label">Start Date</div>
+                <div class="col-md-6">{{ profileDetails.start_date }}</div>
+                <div class="col-md-6 right-label">Years service</div>
+                <div class="col-md-6">{{ profileDetails.years_worked }}</div>
+                <div class="col-md-6 right-label">Leave balance</div>
+                <div class="col-md-6">{{ profileDetails.leave_remaining }}</div>
+                <div class="col-md-6 right-label">Income tax number</div>
+                <div class="col-md-6">{{ profileDetails.tax_number }}</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <h4>Review Details</h4>
+            </div>
+            <div class="row" *ngFor="let review of profileDetails.employee_review; let i = index">
+                <!-- <div class="reviewContainer"> -->
+                <div class="col-md-6 right-label">Date</div>
+                <div class="col-md-6">{{ review.date }}</div>
+                <div class="col-md-6 right-label">Salary</div>
+                <div class="col-md-6">{{ review.salary }}</div>
+                <div class="col-md-6 right-label">Type</div>
+                <div class="col-md-6">{{ review.type }}</div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>

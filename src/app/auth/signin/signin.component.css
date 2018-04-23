@@ -1,0 +1,29 @@
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 25px 0px;
+}
+
+.login-box {
+    border: 2px solid var(--grey);
+    padding: 20px;
+    background-color: var(--white)
+}
+
+.lgnBtn {
+    width: 100%;
+    background-color: var(--nav-orange);
+    border-color: var(--nav-orange);
+}
+
+.lgnBtn:disabled {
+    width: 100%;
+    background-color: var(--warning);
+    border-color: var(--warning);
+}

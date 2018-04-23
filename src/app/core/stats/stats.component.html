@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="section">
+            <div class="row">
+                <h4>Staff Stats</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 right-label">Total</div>
+                <div class="col-md-6">{{ numberOfEmployees }}</div>
+                <div class="col-md-6 right-label">Males</div>
+                <div class="col-md-6">{{ numberOfMaleEmployees }}</div>
+                <div class="col-md-6 right-label">Females</div>
+                <div class="col-md-6">{{ numberOfFemaleEmployees }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="section">
+            <div class="row">
+                <h4>Upcoming Birthdays</h4>
+            </div>
+            <div class="row" *ngFor="let employee of nextBirthdays">
+                <div class="col-md-3 right-label">Date of Birth</div>
+                <div class="col-md-3">{{ employee.birth_date }}</div>
+                <div class="col-md-2 right-label">Name</div>
+                <div class="col-md-4">{{ employee.user.first_name }}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="topnav">
+    <a routerLink="/" class="navbar-brand">Admin Dashboard</a>
+    <a routerLink="/employees" *ngIf="authService.isAuthenticated()">Employees</a>
+    <a routerLink="/stats" *ngIf="authService.isAuthenticated()">Statistics</a>
+    <ng-template [ngIf]="!authService.isAuthenticated()">
+        <a class="right" routerLink="/signin">Login</a>
+    </ng-template>
+
+    <a class="right" routerLink="/profile" *ngIf="authService.isAuthenticated()">Profile</a>
+    <a class="right" (click)="onLogout()" *ngIf="authService.isAuthenticated()">Logout</a>
+</div>

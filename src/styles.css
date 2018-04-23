@@ -1,0 +1,91 @@
+/* Global styles */
+
+:root {
+    --nav-orange: #f96332;
+    --primary: #fa7a50;
+    --success: rgba(24, 206, 15, 0.8);
+    --warning: rgba(255, 178, 54, 0.8);
+    --alert: rgba(255, 54, 54, 0.8);
+    --info: rgba(44, 168, 255, 0.8);
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #778899;
+    --background-main: #efefef;
+}
+
+body {
+    background-color: var(--background-main)
+}
+
+input,
+select {
+    height: 38px !important;
+    border-radius: 0 !important;
+}
+
+h4 {
+    padding-left: 15px;
+    color: var(--grey);
+}
+
+.right-label {
+    text-align: right;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+
+/*
+ * Section blocks styling
+*/
+
+.section {
+    border: 1px solid var(--grey);
+    background-color: var(--white);
+    padding: 5px;
+    margin: 5px
+}
+
+
+/*
+ * Table styles
+*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 1em 0;
+}
+
+th,
+td,
+input,
+p,
+footer,
+li,
+label {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+table thead th,
+table tfoot td {
+    background-color: var(--background-main);
+    border: 1px solid var(--grey);
+    padding: 4px;
+}
+
+table td {
+    border: 1px solid var(--grey);
+    padding: 2px 4px;
+}
+
+table tr {
+    background-color: var(--white)
+}
+
+table input {
+    padding: 1px 2px;
+    width: 100%;
+}
