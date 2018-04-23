@@ -14,19 +14,19 @@ Chrome - v65.0.3325.181 (Official Build) (64-bit)
 
 ## Environment set up - part 2
 
-After roject was pulled from Git, run npm install.
+After project was pulled from Git, run npm install.
 This will install all required packages.
 
-Once project is up and running, you can run ng serve. (as described below) (development server)
+Once project is up and running, you can run ng serve. (As described below) (Development server)
 
 ## Log in details
 
-When promted for log in details, use the below details.
+When prompted for log in details, use the below details.
 
 Username: pravin.gordhan
 Password: pravin.gordhan
 
-Log in button will be disabled untill username and password is entered.
+Log in button will be disabled until username and password is entered.
 
 ## Use case details
 
@@ -34,7 +34,7 @@ After sign in, there will be tabs in the navbar available.
 
 It will direct to employees, which is a list of all employees.
 The stats tab, it is just some birthdays next up, and staff counts
-There is also a profile tab, which sho details of the logged in user.
+There is also a profile tab, which shows details of the logged in user.
 
 ## Development server
 
